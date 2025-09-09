@@ -1,7 +1,7 @@
 class Solution {
 public:
     int subarraySum(vector<int>& nums, int k) {
-        unordered_map<long long, int> sum_freq; // Maps cumulative sum to its frequency
+        unordered_map<int, int> sum_freq; // Maps cumulative sum to its frequency
         sum_freq[0] = 1; // Initialize for subarrays starting from index 0
         long long curr_sum = 0; // Current cumulative sum
         int count = 0; // Count of subarrays with sum k
